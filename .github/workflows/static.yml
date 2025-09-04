@@ -24,11 +24,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 20     # removed: cache: npm
 
       - name: Install deps
-        run: npm ci || npm install
+        run: npm install       # no npm ci; works without a lockfile
 
       - name: Build
         run: npm run build
