@@ -36,9 +36,9 @@ type RawRace = {
 };
 
 const SERIES: Record<string, { id: number; fallbackName: string; logo: string }> = {
-  N1: { id: 1, fallbackName: 'Cup Series', logo: '/what-channel-is-nascar-on/N1.png' },
-  N2: { id: 2, fallbackName: 'Xfinity Series', logo: '/what-channel-is-nascar-on/N2.png' },
-  N3: { id: 3, fallbackName: 'Craftsman Truck Series', logo: '/what-channel-is-nascar-on/N3.png' },
+  N1: { id: 1, fallbackName: 'Cup Series', logo: 'N1.png' },
+  N2: { id: 2, fallbackName: 'Xfinity Series', logo: 'N2.png' },
+  N3: { id: 3, fallbackName: 'Craftsman Truck Series', logo: 'N3.png' },
 };
 
 // Broadcaster logos
