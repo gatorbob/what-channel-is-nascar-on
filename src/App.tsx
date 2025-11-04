@@ -37,7 +37,7 @@ type RawRace = {
 
 const SERIES: Record<string, { id: number; fallbackName: string; logo: string }> = {
   N1: { id: 1, fallbackName: 'NASCAR Cup Series', logo: 'N1.png' },
-  N2: { id: 2, fallbackName: 'NASCAR OReilly Auto Parts Series', logo: 'N2.png' },
+  N2: { id: 2, fallbackName: 'NASCAR O\'Reilly Auto Parts Series', logo: 'N2.png' },
   N3: { id: 3, fallbackName: 'NASCAR Craftsman Truck Series', logo: 'N3.png' },
 };
 
@@ -160,7 +160,7 @@ export default function App() {
     (async () => {
       try {
         setErr(null);
-        const res = await fetch('https://cf.nascar.com/cacher/2025/race_list_basic.json', { signal: controller.signal });
+        const res = await fetch('https://cf.nascar.com/cacher/2026/race_list_basic.json', { signal: controller.signal });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
         if (!mounted) return;
