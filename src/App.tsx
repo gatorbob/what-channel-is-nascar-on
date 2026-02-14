@@ -160,7 +160,7 @@ export default function App() {
     (async () => {
       try {
         setErr(null);
-        const res = await fetch('https://cf.nascar.com/cacher/2026/race_list_basic.json', { signal: controller.signal });
+        const res = await fetch('https://cf.nascar.com/cacher/2025/race_list_basic.json', { signal: controller.signal });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
         if (!mounted) return;
