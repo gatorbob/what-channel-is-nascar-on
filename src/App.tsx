@@ -37,7 +37,7 @@ type RawRace = {
 
 const SERIES: Record<string, { id: number; fallbackName: string; logo: string }> = {
   N1: { id: 1, fallbackName: 'NASCAR Cup Series', logo: 'N1.png' },
-  N2: { id: 2, fallbackName: 'NASCAR O\'Reilly Auto Parts Series', logo: 'N2.png' },
+  N2: { id: 2, fallbackName: 'NASCAR O'Reilly Auto Parts Series', logo: 'N2.png' },
   N3: { id: 3, fallbackName: 'NASCAR Craftsman Truck Series', logo: 'N3.png' },
 };
 
